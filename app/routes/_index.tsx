@@ -1,5 +1,9 @@
 import type { MetaFunction } from "@remix-run/node";
 
+export const config = {
+  maxDuration: 5,
+};
+
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
