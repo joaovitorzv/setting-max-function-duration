@@ -1,12 +1,3 @@
 {
-  "build": {
-    "env": {
-      "VERCEL_CLI_VERSION": "vercel@30.0.0"
-    }
-  },
-  "functions": {
-    "app/routes/**/*": {
-      "maxDuration": 5
-    }
-  }
+  "build": {}
 }

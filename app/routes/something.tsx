@@ -1,16 +1,22 @@
 import type { MetaFunction } from "@remix-run/node";
 
+export const config = { maxDuration: 4 };
+
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "Something" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
 
-export default function Index() {
+export const loader = async () => {
+  return { message: "Hello from the loader!" };
+};
+
+export default function Something() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
+      <h1>Welcome Something Page</h1>
       <ul>
         <li>
           <a
