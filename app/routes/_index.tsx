@@ -1,10 +1,6 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
-export const config = {
-  maxDuration: 5,
-};
-
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const loader = async () => {

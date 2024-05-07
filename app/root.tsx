@@ -6,6 +6,10 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+export const config = {
+  maxDuration: 6,
+};
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
